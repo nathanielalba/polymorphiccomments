@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @actor.name %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @actor.bio %>
+</p>
+
+<%= render "shared/comments", object: @actor %>
+<%= render "shared/commentform", object: @actor %>
+
+
+<%= link_to 'Edit', edit_actor_path(@actor) %> |
+<%= link_to 'Back', actors_path %>

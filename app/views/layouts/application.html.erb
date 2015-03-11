@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+<nav class= "navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand">Movie Database</a>
+			<ul class="nav navbar-nav">
+				<li><%= link_to "Movies", movies_path %></li>
+				<li><%= link_to "Actors", actors_path %></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 <%= yield %>
 
 </body>
